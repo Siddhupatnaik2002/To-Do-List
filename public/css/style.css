@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#05073a,#dc0606ca);
+}
+
+.box{
+    color:#fff;
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+}
+
+.container{
+    max-width:700px;
+    width:100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background:linear-gradient(135deg,#dc0606ca,#05073a);
+}
+
+.container .heading{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position:relative;
+    text-align:center;
+    padding: 0 0 20px 0;
+    text-shadow: 0.23rem 0.23rem 0 black;
+}
+#head-box{
+    box-shadow: 0 0.24rem 0 #d0d0d8;
+    border-radius: 4%;
+    margin-bottom: 5%;
+}
+
+.slate{
+    display:flex;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: x-large;
+    border-color: aliceblue;
+    padding:2.5%;
+    margin-left:15%;
+    margin-right: 15%;
+    margin-bottom:3%;
+}
+
+.slate p{
+    margin-left:1.8%;
+}
+
+.slate input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: black;
+    text-decoration-style: solid;
+}
+
+.last{
+    margin-top:3%;
+    margin-bottom:3%;
+    display:flex;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: x-large;
+    border-color: rgb(233, 227, 194);
+    padding:1.5%;
+    margin-left:15%;
+    margin-right: 15%;
+    background-color: #fff;
+}
+.last input[type=text]{
+    text-align:center;
+    padding:2%;
+    width:75%;
+    border-style:none;
+    border-color:white;
+}
+
+.last input[type=text]:focus{
+    outline:none;
+}
+
+.last button{
+    border-style:none;
+    border-radius:50%;
+    font-size:x-large;
+    width:45px;
+    height:45px;
+    background:linear-gradient(135deg,#dc0606ca,#05073a);
+    color:white;
+    cursor:pointer;
+    box-shadow: -0.13rem 0.13rem 0.23rem black;
+    margin-left:3px;
+}
+.last button:hover{
+    box-shadow:none;
+}
+
+::placeholder{
+    color:rgba(255, 0, 0, 0.658); 
+    text-align:center;
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    padding:2%;
+}
+
+footer{
+    text-align:center;
+    color:azure;
+    border-style:none;
+    background-color: black;
+}
+
+@media (max-width:584px){
+    .container{
+        max-width:100%;
+        overflow:scroll;
+    }
+}
